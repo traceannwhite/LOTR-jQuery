@@ -159,6 +159,16 @@ const forgeTheFellowShip = () => {
   // 2. add an h1 with the text 'The Fellowship' to this new div
   // 3. append the fellowship to middle-earth
   // 4. add the unordered lists of hobbits and buddies to 'the-fellowship'
+  const $div = $("<div>").attr("id", "the-fellowship");
+  const $h1 = $("<h1>").text("The Fellowship");
+  $h1.appendTo($div);
+  // $("#middle-earth").append($div);
+  $div.appendTo("#middle-earth");
+  // $(".hobbits").detach;
+  $(".hobbit").appendTo("#the-fellowship");
+  // $(".buddies").detach;
+  $(".buddy").appendTo("#the-fellowship");
+};
 
 // COMMIT YOUR WORK
 // The commit message should read: "Chapter 8 complete - The Fellowship is created"
@@ -170,6 +180,7 @@ const theBalrog = () => {
   // 1. change the 'Gandalf' text to 'Gandalf the White'
   // 2. add a class "the-white" to this element
   // 3. in the style.css file, add a css rule to make elements of the class "the-white" have a white background and a grey border
+  $(".buddy").eq(0).text("Gandalf the White").addClass("the-white");
 };
 
 // COMMIT YOUR WORK
