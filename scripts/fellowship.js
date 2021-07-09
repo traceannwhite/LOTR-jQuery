@@ -159,7 +159,6 @@ const forgeTheFellowShip = () => {
   // 2. add an h1 with the text 'The Fellowship' to this new div
   // 3. append the fellowship to middle-earth
   // 4. add the unordered lists of hobbits and buddies to 'the-fellowship'
-};
 
 // COMMIT YOUR WORK
 // The commit message should read: "Chapter 8 complete - The Fellowship is created"
